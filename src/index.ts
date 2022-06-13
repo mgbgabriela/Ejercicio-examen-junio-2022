@@ -148,3 +148,46 @@ console.log(
     " fue de $ " +
     calcularVentaMax(vendedores, vendedor5)
 );
+
+// Calcular la venta minima
+let calcularVentaMin = (nombres: string[], ventas: number[]) => {
+  let ventaMin: number = 1000000;
+  let vendedor: string = " ";
+  for (indice = 0; indice < 12; indice++) {
+    if (ventas[indice] <= ventaMin) {
+      ventaMin = ventas[indice];
+    }
+  }
+  return ventaMin;
+};
+
+console.log(
+  "La venta mínima " +
+    vendedores[0] +
+    " fue de $ " +
+    calcularVentaMin(vendedores, vendedor1)
+);
+console.log(
+  "La venta mínima " +
+    vendedores[1] +
+    " fue de $ " +
+    calcularVentaMin(vendedores, vendedor2)
+);
+console.log(
+  "La venta mínima " +
+    vendedores[2] +
+    " fue de $ " +
+    calcularVentaMin(vendedores, vendedor3)
+);
+console.log(
+  "La venta mínima " +
+    vendedores[3] +
+    " fue de $ " +
+    calcularVentaMin(vendedores, vendedor4)
+);
+console.log(
+  "La venta mínima " +
+    vendedores[4] +
+    " fue de $ " +
+    calcularVentaMin(vendedores, vendedor5)
+);
