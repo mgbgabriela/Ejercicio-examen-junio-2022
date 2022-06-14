@@ -191,7 +191,7 @@ console.log(
     " fue de $ " +
     calcularVentaMin(vendedores, vendedor5)
 );
-
+//promedio trimestral
 
 let calcularPromedioTrimestral = (nombres: string[], 
   ventas: number[]) => {
@@ -199,7 +199,7 @@ let calcularPromedioTrimestral = (nombres: string[],
   let promedio: number;
   for (indice = 0; indice < 12; indice++) {    
        sumaTotal += ventas[indice];
-       promedio = sumaTotal/12
+       promedio = sumaTotal/3
   }return promedio;
   }
 
@@ -213,3 +213,28 @@ console.log ("El promedio de ventas trimestral de " + vendedores[0] +
  " es de $ " +calcularPromedioTrimestral(vendedores,vendedor4);
  console.log ("El promedio de ventas trimestral de " + vendedores[4] +
  " es de $ " +calcularPromedioTrimestral(vendedores,vendedor5);
+
+
+
+ //calcular promedio mensual
+
+ let calcularPromedioMensual = (nombres: string[], 
+  ventas: number[]) => {
+  let sumaTotal: number= 0;  
+  let promedio: number;
+  for (indice = 0; indice < 12; indice++) {    
+       sumaTotal += ventas[indice];
+       promedio = sumaTotal/12
+  }return promedio;
+  }
+
+console.log ("El promedio de ventas mensual de " + vendedores[0] +
+ " es de $ " +calcularPromedioMensual(vendedores,vendedor1);
+ console.log ("El promedio de ventas mensual de " + vendedores[1] +
+ " es de $ " +calcularPromedioMensual(vendedores,vendedor2);
+ console.log ("El promedio de ventas mensual de " + vendedores[2] +
+ " es de $ " +calcularPromedioMensual(vendedores,vendedor3);
+ console.log ("El promedio de ventas mensual de " + vendedores[3] +
+ " es de $ " +calcularPromedioMensual(vendedores,vendedor4);
+ console.log ("El promedio de ventas mensual de " + vendedores[4] +
+ " es de $ " +calcularPromedioMensual(vendedores,vendedor5);
