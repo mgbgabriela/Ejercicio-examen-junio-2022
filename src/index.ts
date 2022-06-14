@@ -238,3 +238,5 @@ console.log ("El promedio de ventas mensual de " + vendedores[0] +
  " es de $ " +calcularPromedioMensual(vendedores,vendedor4);
  console.log ("El promedio de ventas mensual de " + vendedores[4] +
  " es de $ " +calcularPromedioMensual(vendedores,vendedor5);
+
+
